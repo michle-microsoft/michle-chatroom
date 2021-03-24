@@ -23,6 +23,11 @@ namespace Chat_Room_Tutorial
                 app.UseDeveloperExceptionPage();
             }
 
+            // Use web pages added in wwwroot folder.
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            // Use routing.
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
